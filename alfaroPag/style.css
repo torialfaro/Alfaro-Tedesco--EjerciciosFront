@@ -1,0 +1,141 @@
+:root {
+    --colorFondo: #f1e4e8;
+    --colorHover: #b3849b;
+    --colorFooter: #e0d9dd;
+    --colorTexto: #5e4151;
+    --fuente: "Quicksand", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorFondo);
+}
+.encabezado {
+    background-color: var(--colorFooter);
+    color: var(--colorTexto);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logotipo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--fuente);
+}
+.barra ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.barra a {
+    text-decoration: none;
+    color: var(--colorTexto);
+    font-weight: bold;
+    font-family: var(--fuente);
+}
+.barra a:hover {
+    color: var(--colorHover);
+}
+.banner {
+    background-image: url('imagenes/bannerFoto.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.bannerContenido {
+    padding: 20px;
+    border-radius: 10px;
+}
+.bannerContenido p {
+    color: white;
+    font-family: var(--fuente);
+    font-weight: 500;
+    text-shadow: 1px 1px 4px var(--colorTexto);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--colorTexto);
+    background-color: rgba(255, 255, 255, 0.616);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-family: var(--fuente);
+    font-weight: 600;
+}
+.boton:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.textoPrincipal p,.textoPrincipal h1 {
+    color: var(--colorTexto);
+    font-family: var(--fuente);
+    line-height: 1.5;
+}
+.textoPrincipal p {
+    font-size: 1rem;
+}
+.textoPrincipal {
+    padding: 1.5rem 2rem;
+}
+.pie {
+    background-color: var(--colorFooter);
+    color: var(--colorTexto);
+    padding: 1rem 2rem;
+    font-family: var(--fuente);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.pie p {
+    margin: 0;
+}
+ 
+.pie a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--colorTexto);
+}
+
+@media (max-width: 480px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+    .barra ul {
+        gap: 12px;
+    }
+    .banner {
+        height: 45vh;
+    }
+    .bannerContenido p {
+        font-size: 1.1rem;
+    }
+    .boton {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+    .textoPrincipal h1 {
+        font-size: 1.3rem;
+    }
+    .textoPrincipal p {
+        font-size: 0.95rem;
+    }
+    .textoPrincipal {
+        padding: 1rem;
+    }
+}
